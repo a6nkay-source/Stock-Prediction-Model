@@ -1,0 +1,75 @@
+ticker,name,sector,cik
+AAPL,Apple,Technology,320193
+MSFT,Microsoft,Technology,789019
+NVDA,NVIDIA,Technology,1045810
+AVGO,Broadcom,Technology,1730168|1649338|1441634
+ORCL,Oracle,Technology,1341439
+CRM,Salesforce,Technology,1108524
+ADBE,Adobe,Technology,796343
+CSCO,Cisco Systems,Technology,858877
+INTC,Intel,Technology,50863
+AMD,Advanced Micro Devices,Technology,2488
+IBM,IBM,Technology,51143
+QCOM,Qualcomm,Technology,804328
+TXN,Texas Instruments,Technology,97476
+GOOGL,Alphabet,Communication Services,1652044|1288776
+META,Meta Platforms,Communication Services,1326801
+NFLX,Netflix,Communication Services,1065280
+DIS,Walt Disney,Communication Services,1744489|1001039
+VZ,Verizon,Communication Services,732712
+T,AT&T,Communication Services,732717
+CMCSA,Comcast,Communication Services,1166691
+AMZN,Amazon,Consumer Discretionary,1018724
+TSLA,Tesla,Consumer Discretionary,1318605
+HD,Home Depot,Consumer Discretionary,354950
+MCD,McDonald's,Consumer Discretionary,63908
+NKE,Nike,Consumer Discretionary,320187
+SBUX,Starbucks,Consumer Discretionary,829224
+LOW,Lowe's,Consumer Discretionary,60667
+BKNG,Booking Holdings,Consumer Discretionary,1075531
+PG,Procter & Gamble,Consumer Staples,80424
+KO,Coca-Cola,Consumer Staples,21344
+PEP,PepsiCo,Consumer Staples,77476
+WMT,Walmart,Consumer Staples,104169
+COST,Costco,Consumer Staples,909832
+CL,Colgate-Palmolive,Consumer Staples,21665
+MDLZ,Mondelez,Consumer Staples,1103982
+JNJ,Johnson & Johnson,Healthcare,200406
+UNH,UnitedHealth,Healthcare,731766
+LLY,Eli Lilly,Healthcare,59478
+PFE,Pfizer,Healthcare,78003
+MRK,Merck,Healthcare,310158
+ABBV,AbbVie,Healthcare,1551152
+TMO,Thermo Fisher Scientific,Healthcare,97745
+ABT,Abbott Laboratories,Healthcare,1800
+AMGN,Amgen,Healthcare,318154
+JPM,JPMorgan Chase,Financials,19617
+BAC,Bank of America,Financials,70858
+V,Visa,Financials,1403161
+MA,Mastercard,Financials,1141391
+GS,Goldman Sachs,Financials,886982
+MS,Morgan Stanley,Financials,895421
+BRK-B,Berkshire Hathaway,Financials,1067983
+AXP,American Express,Financials,4962
+BLK,BlackRock,Financials,2012383|1364742
+WFC,Wells Fargo,Financials,72971
+CAT,Caterpillar,Industrials,18230
+BA,Boeing,Industrials,12927
+HON,Honeywell,Industrials,773840
+UPS,United Parcel Service,Industrials,1090727
+GE,GE Aerospace,Industrials,40545
+LMT,Lockheed Martin,Industrials,936468
+UNP,Union Pacific,Industrials,100885
+DE,Deere,Industrials,315189
+XOM,Exxon Mobil,Energy,34088
+CVX,Chevron,Energy,93410
+COP,ConocoPhillips,Energy,1163165
+SLB,Schlumberger,Energy,87347
+NEE,NextEra Energy,Utilities,753308
+DUK,Duke Energy,Utilities,1326160
+SO,Southern Company,Utilities,92122
+AMT,American Tower,Real Estate,1053507
+PLD,Prologis,Real Estate,1045609
+LIN,Linde,Materials,1707925
+SHW,Sherwin-Williams,Materials,89800
+FCX,Freeport-McMoRan,Materials,831259

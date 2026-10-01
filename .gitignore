@@ -1,0 +1,21 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# downloaded market data + trained artifacts (rebuilt by the pipeline)
+data/cache/
+models/artifacts/
+
+# node
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+.DS_Store
