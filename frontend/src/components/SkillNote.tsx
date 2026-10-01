@@ -1,6 +1,6 @@
 import type { Intervals, Skill } from '../lib/api'
 import { HORIZON_ADJ, HORIZON_LABEL, pct } from '../lib/format'
-import { Callout, Term } from './ui'
+import { Callout, Term } from './primitives'
 
 /** The honest caveat that sits above every set of predictions. */
 export function SkillNote({ horizon, abs, rel, intervals }: { horizon: string; abs: Skill; rel: Skill; intervals?: Intervals }) {

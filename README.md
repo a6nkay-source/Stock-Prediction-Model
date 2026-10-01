@@ -84,7 +84,7 @@ it, because the frontend only talks to `/api`.
 
 | Page | What it shows |
 |---|---|
-| **Portfolio Overview** | Suggested portfolio for the current profile, top-ranked stocks, market state, sector performance, risk/return scatter, sector correlations |
+| **Portfolio Overview** | A board of twelve draggable widgets (suggested portfolio, model track record, top-ranked stocks, S&P 500, backtest, sectors, risk/return and more) that you can rearrange, lock and reset; the layout is saved in the browser. Sector performance and correlations sit below it |
 | **AI Stock Predictor** | Every stock ranked by AI Score, with probabilities, expected range, risk, confidence, past returns and fundamentals in sortable columns |
 | **Stock Explorer** | One stock in depth: price chart, predictions at every horizon, plain-language reasoning, factor contributions, every past prediction against what happened, fundamentals, analysts, earnings, news |
 | **Portfolio Builder** | Investor profile form (amount, horizon, risk, limits, sectors to prefer or avoid, current holdings) and the optimised portfolio it produces |
@@ -130,9 +130,14 @@ data/          provider interface, Yahoo / Stooq / SEC EDGAR providers, disk cac
 models/        features, walk-forward training, evaluation, explanations, scoring, portfolio optimiser
 backtesting/   simulator, performance metrics, weighting rules
 backend/       FastAPI app, pipeline, service layer, report generator
-frontend/      React + TypeScript + Tailwind + Recharts
+frontend/      React + TypeScript + Tailwind + Recharts + Motion (shadcn-style layout: src/components/ui, "@/" alias)
 tests/         look-ahead, backtest and portfolio tests
 ```
+
+**Adding UI components:** the frontend follows the shadcn layout (`components.json`, the `@/`
+import alias, `src/components/ui/`, `cn()` in `src/lib/utils.ts`), so `npx shadcn@latest add <name>`
+works from `frontend/`. shadcn colour names such as `bg-card` and `ring-border` are mapped onto
+this app's own light and dark tokens in `src/index.css`.
 
 **Adding stocks:** add a row to `data/universe.csv` (ticker, name, sector, SEC CIK) and re-run
 the pipeline. **Swapping the data vendor:** implement `MarketDataProvider` in

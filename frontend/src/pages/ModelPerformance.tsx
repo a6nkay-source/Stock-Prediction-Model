@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Bar, BarChart, CartesianGrid, ComposedChart, Line, ReferenceLine, ResponsiveContainer, Scatter, Tooltip, XAxis, YAxis } from 'recharts'
 import { AXIS, ChartTooltip, GRID, Legend, MODEL_COLOR } from '../components/charts'
-import { Badge, Callout, Card, ErrorBox, Loading, PageHeader, Segmented, Stat, Term } from '../components/ui'
+import { Badge, Callout, Card, ErrorBox, Loading, PageHeader, Segmented, Stat, Term } from '../components/primitives'
 import { api, useAsync, type Horizon, type HorizonMetrics, type ModelsResponse } from '../lib/api'
 import { HORIZON_ADJ, HORIZON_LABEL, MODEL_LABEL, num, pct, shortDate, signedPct } from '../lib/format'
 import { useProfile } from '../lib/profile'

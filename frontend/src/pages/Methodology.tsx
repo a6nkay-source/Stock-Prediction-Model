@@ -1,6 +1,6 @@
 import { Download, Printer } from 'lucide-react'
 import type { ReactNode } from 'react'
-import { Callout, Card, ErrorBox, Loading, PageHeader } from '../components/ui'
+import { Callout, Card, ErrorBox, Loading, PageHeader } from '../components/primitives'
 import { api, useAsync, type BacktestResponse, type Horizon, type ModelsResponse } from '../lib/api'
 import { HORIZON_ADJ, HORIZON_LABEL, money, num, pct, shortDate, signedPct } from '../lib/format'
 

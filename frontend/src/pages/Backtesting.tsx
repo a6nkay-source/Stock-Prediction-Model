@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Bar, BarChart, CartesianGrid, Line, LineChart, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import { AXIS, ChartTooltip, GRID, Legend, SERIES, ShareBars } from '../components/charts'
-import { Badge, Callout, Card, ErrorBox, Loading, PageHeader, Segmented, Stat, Term } from '../components/ui'
+import { Badge, Callout, Card, ErrorBox, Loading, PageHeader, Segmented, Stat, Term } from '../components/primitives'
 import { api, useAsync, type BacktestResponse, type Horizon, type PerfStats, type Risk, type StrategyKey } from '../lib/api'
 import { money, num, pct, shortDate, signedPct, tone, year } from '../lib/format'
 import { useProfile } from '../lib/profile'

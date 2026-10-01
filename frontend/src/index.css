@@ -68,6 +68,26 @@
   --color-good: var(--good-text);
   --color-warn: var(--warn-text);
   --color-bad: var(--bad-text);
+
+  /* shadcn token names, mapped onto the tokens above so components copied from
+     shadcn-style registries (bg-card, ring-border, text-muted-foreground …)
+     follow this app's light and dark themes. `muted` and `accent` keep this
+     app's meaning (a text colour and the brand blue). */
+  --color-background: var(--page);
+  --color-foreground: var(--ink);
+  --color-card: var(--surface);
+  --color-card-foreground: var(--ink);
+  --color-popover: var(--surface);
+  --color-popover-foreground: var(--ink);
+  --color-primary: var(--accent);
+  --color-primary-foreground: #ffffff;
+  --color-secondary: var(--surface-2);
+  --color-secondary-foreground: var(--ink);
+  --color-muted-foreground: var(--ink-2);
+  --color-destructive: var(--bad);
+  --color-border: var(--border);
+  --color-input: var(--border);
+  --color-ring: var(--accent);
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -82,8 +102,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 .tnum { font-variant-numeric: tabular-nums; }
-button, select, input { font: inherit; color: inherit; }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+/* In the base layer so Tailwind utilities (text colours, outline-none, radii) can override them. */
+@layer base {
+  button, select, input { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+}
 
 .field {
   width: 100%;

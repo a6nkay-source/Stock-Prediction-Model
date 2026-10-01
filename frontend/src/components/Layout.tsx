@@ -4,7 +4,7 @@ import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { api, useAsync, type Horizon, type Risk } from '../lib/api'
 import { shortDate } from '../lib/format'
 import { useProfile } from '../lib/profile'
-import { Loading } from './ui'
+import { Loading } from './primitives'
 
 const NAV = [
   { to: '/', label: 'Portfolio Overview', icon: LayoutDashboard },
@@ -73,7 +73,7 @@ export default function Layout() {
       </aside>
       {open && <div className="fixed inset-0 z-20 bg-black/40 lg:hidden" onClick={() => setOpen(false)} />}
 
-      <div className="flex min-w-0 flex-1 flex-col">
+      <div className="flex min-w-0 flex-1 flex-col overflow-x-clip">
         <header className="sticky top-0 z-10 flex h-14 items-center gap-2 border-b border-line bg-surface/95 px-4 backdrop-blur">
           <button className="rounded-lg p-1.5 hover:bg-surface-2 lg:hidden" onClick={() => setOpen(!open)} aria-label="Toggle navigation">
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}

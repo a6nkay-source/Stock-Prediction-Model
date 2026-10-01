@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { Heatmap, ShareBars } from '../components/charts'
 import { ProfileForm } from '../components/ProfileForm'
-import { Callout, Card, ErrorBox, Loading, PageHeader, ProbBar, RiskBadge, SortableTable, Stat, Term, type Column } from '../components/ui'
+import { Callout, Card, ErrorBox, Loading, PageHeader, ProbBar, RiskBadge, SortableTable, Stat, Term, type Column } from '../components/primitives'
 import { api, useAsync, type PortfolioHolding, type PortfolioResponse } from '../lib/api'
 import { HORIZON_ADJ, money, num, pct, shortDate, signedPct } from '../lib/format'
 import { portfolioRequest, useProfile } from '../lib/profile'

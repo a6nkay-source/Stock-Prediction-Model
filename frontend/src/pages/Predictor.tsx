@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { SkillNote } from '../components/SkillNote'
-import { Card, ConfidenceBadge, ErrorBox, Loading, PageHeader, ProbBar, RangeBar, RiskBadge, Segmented, SortableTable, Term, type Column } from '../components/ui'
+import { Card, ConfidenceBadge, ErrorBox, Loading, PageHeader, ProbBar, RangeBar, RiskBadge, Segmented, SortableTable, Term, type Column } from '../components/primitives'
 import { api, useAsync, type PredictionRow } from '../lib/api'
 import { compactMoney, HORIZON_ADJ, NA, num, pct, signedPct, tone } from '../lib/format'
 import { SECTORS, useProfile } from '../lib/profile'
